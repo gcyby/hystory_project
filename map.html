@@ -1,0 +1,48 @@
+<html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивная карта — Летний берег Белого моря</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styleinf.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+            <h3>Интерактивная карта</h3>
+            <nav>
+                <a href="index.html" class="btn-custom">Главная</a>
+                <a href="map.html" class="btn-custom">Интерактивная карта</a>
+                <a href="info.html" class="btn-custom">О проекте</a>
+            </nav>
+        
+        </header>
+    <div class="container">
+        
+
+        <div class="main-content">
+            <div id="map-container"></div>
+
+            <div class="sidebar" id="sidebar">
+                <div class="info-placeholder" id="placeholder">
+                    <p>📍 Нажмите на любую точку маршрута на карте, чтобы открыть подробную историческую справку.</p>
+                </div>
+                <div id="poi-content" style="display: none;">
+                    <h2 class="poi-title" id="poi-name">Название локации</h2>
+                    <p id="poi-text">Историческое описание...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>Gosha.Ai 2026 г.</footer>
+
+    <script src="mapscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    gap: 20px;
+    background-color: #fafafa;
+    padding:10px 10px;
+}
+
+nav{
+    padding: 20px;
+    gap: 20px;
+}
+
+.main{
+    gap: 20px;
+    display: flex;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #6f7792;
+}
+
+.btn-custom {
+  /* Базовый вид */
+  display: inline;
+  gap: 20px;
+  padding: 6px 12px;
+  background-color: var(--accent-color);
+    color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  
+  /* Скругление и тени */
+  border-radius: 8px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  
+  /* Плавный переход для всех анимаций */
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #656f65;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); /* Легкий подъем вверх */
+}
+
+.btn-custom:active {
+  transform: translateY(1px); /* Имитация вдавливания */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #1e3d59;
+    color: #a6b1e1;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5px;
+}
+
+:root {
+    --bg-color: #F4F6F8;        /* Фон сайта */
+    --card-color: #FFFFFF;      /* Фон карточки */
+    --text-main: #1E252B;       /* Основной текст */
+    --accent-color: #2C4A5E;    /* Кнопки и важные ссылки */
+    --accent-hover: #416B85;    /* Кнопки при наведении */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);   
+}
+
+h2 {
+    max-width: 900px; /* Такая же максимальная ширина, как у <section> */
+    margin: 10px; /* Центрируем заголовок по экрану */
+    padding-left: 20px; /* ВАЖНО: этот отступ должен быть равен padding у карточки */
+    
+    font-size: 1.8rem;
+    color: #1e3d59;
+}
+h1{
+    max-width: 900px; /* Такая же максимальная ширина, как у <section> */
+    margin: 10px; /* Центрируем заголовок по экрану */
+    text-align: center;
+}
+
+/* Стили текста и списков */
+p {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
