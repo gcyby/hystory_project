@@ -247,15 +247,27 @@ footer {
         justify-content: center;
     }
 
+    /* МЕНЯЕМ ТУТ: Выстраиваем контент в столбик */
     section, .main {
+        flex-direction: column; 
+        align-items: stretch; /* Растягиваем контент по ширине */
         margin: 15px;
         padding: 20px;
     }
 
+    /* МЕНЯЕМ ТУТ: Сдвигаем картинку в самый конец блока */
     section img {
         width: 100%;
         margin-right: 0;
-        margin-bottom: 15px;
+        margin-top: 15px;
+        margin-bottom: 0; /* Переносим отступ наверх, так как картинка теперь снизу */
+        order: 2; /* Текст получит порядок по умолчанию (0), а картинка уйдет вниз (2) */
+    }
+    
+    /* Если текст внутри секции обернут в теги или идет обычными абзацами, 
+       принудительно поднимаем его выше картинки */
+    section p, section h2, section ul, .info {
+        order: 1;
     }
 
     .main-content {
